@@ -1,18 +1,134 @@
-<!--
-  Generated template for the TabHomePage page.
 
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-<ion-header>
+<!--<ion-header>-->
 
-  <ion-navbar>
-    <ion-title>tab-home</ion-title>
-  </ion-navbar>
+  <!--<ion-navbar>-->
+    <!--<ion-title>首页</ion-title>-->
+  <!--</ion-navbar>-->
 
-</ion-header>
+<!--</ion-header>-->
 
 
-<ion-content padding>
+<ion-content id="home">
+  <div>
+    <!--搜索-->
+    <div class="headerBar" id="headerBar">
+      <div #headBgColor id="headerBar-bg"></div>
+        <div class="headerBar-logo">
+          <i></i>
+        </div>
+        <a class="header-search" (click)="startPage('search')">
+          <span></span>
+          <div>
+            <input maxlength="20" autocomplete="true" value="美装一元起 独家放假">
+          </div>
+        </a>
+        <a class="btn-login" (click)="startPage('login')">
+          <span>登录</span>
+        </a>
+    </div>
+  </div>
 
+  <div #lyScroll id="home-content" class="scroll-content" scroll="false">
+    <!--头部滚动条-->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" *ngFor="let item of headerSlideData">
+          <img src="{{item.src}}" alt="{{item.alt}}" class="swiper-img">
+        </div>
+      </div>
+      <!--如果需要分页器-->
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!--功能导航-->
+    <nav id="nav">
+      <span ui-sref="indexTab.category">
+          <img src="assets/img/nav0.png" alt="">
+          <h2>分类查询</h2>
+      </span>
+      <span>
+        <img src="assets/img/nav1.png" alt="">
+        <h2>物流查询</h2>
+      </span>
+      <span>
+        <img src="assets/img/nav2.png" alt="">
+        <h2>购物车</h2>
+      </span>
+      <span>
+        <img src="assets/img/nav3.png" alt="">
+        <h2>我的京东</h2>
+      </span>
+      <span>
+        <img src="assets/img/nav4.png" alt="">
+        <h2>充值</h2>
+      </span>
+      <span>
+        <img src="assets/img/nav5.png" alt="">
+        <h2>领券中心</h2>
+      </span>
+      <span>
+        <img src="assets/img/nav6.png" alt="">
+        <h2>生活团购</h2>
+      </span>
+    </nav>
+
+    <!--头条-->
+    <div class="toutiao">
+      <img src="assets/img/home-toutiao.jpg" alt="">
+      <div class="headline">
+        兰博丹尼 可爱零钱包 5555
+      </div>
+    </div>
+
+    <!--秒杀-->
+    <div class="content">
+      <div class="content-top">
+        <span></span>
+        <h2>掌上秒杀</h2>
+        <div class="content-time">
+          <span class="time-text">0</span>
+          <span class="time-text">0</span>
+          <span>:</span>
+          <span class="time-text">0</span>
+          <span class="time-text">0</span>
+          <span>:</span>
+          <span class="time-text">0</span>
+          <span class="time-text">0</span>
+        </div>
+        <div class="content-more">
+          更多>
+        </div>
+      </div>
+      <ul class="content-btn">
+        <li>
+          <img src="assets/img/seckill_1.jpg" alt="">
+          <span class="seckill-now">￥333.22</span>
+          <span class="seckill-old">￥15.98</span>
+        </li>
+        <li>
+          <img src="assets/img/seckill_1.jpg" alt="">
+          <span class="seckill-now">￥11.15</span>
+          <span class="seckill-old">￥222.10</span>
+        </li>
+        <li>
+          <img src="assets/img/seckill_1.jpg" alt="">
+          <span class="seckill-now">￥46.26</span>
+          <span class="seckill-old">99.81</span>
+        </li>
+      </ul>
+    </div>
+
+    <!--主题街-->
+    <div class="floor">
+      <div class="floor-title">
+        主题街
+      </div>
+      <div class="floor-product">
+        <div class="product-list floor-left">
+
+        </div>
+      </div>
+    </div>
+
+  </div>
 </ion-content>
