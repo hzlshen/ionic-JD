@@ -236,9 +236,74 @@ page-tab-home {
     margin-top: 0;
   }
 
-  
+  #home .content-time span{
+    background-image:none;
+    margin:5px 1px;
+    width:5px;
+    color:#5d5d5d;
+    font-size:14px;
+    font-weight:700;
+    text-align:center;
 
+  }
 
+  #home .content-time .time-text{
+    color: #ffffff;
+    font-size: 16px;
+    width: 15px;
+    font-weight: 300;
+    background-color: #5d5d5d;
+  }
+
+  #home .content-more{
+    float: right;
+    line-height: 30px;
+    margin-right: 5px;
+    font-size: 14px;
+  }
+
+  #home .content-btn{
+    padding-top: 7px;
+    overflow: hidden;
+  }
+
+  #home .content-btn li{
+    width: 33.3%;
+    float: left;
+  }
+
+  #home .content-btn li img{
+    display: block;
+    border-right: 1px solid #e6e6e6;
+    margin: 0;
+    padding: 0;
+    height:100px;
+    width: 100%;
+  }
+
+  #home .content-btn li  span{
+    display: block;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  #home .seckill-now{
+    color: #f15353;
+  }
+
+  #home .seckill-old{
+    text-decoration: line-through;
+  }
+
+  //广告
+  #home .ad ion-slide {
+
+  }
+
+  #home .ad ion-slide img {
+    height: 15%;
+    width: 100%;
+  }
 
 
 }
