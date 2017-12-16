@@ -179,8 +179,66 @@ page-tab-home {
   //京东头条
   #home .toutiao{
     margin-top: 10px;
-
+    position: relative;
+    height: 42px;
+    width: 100%;
+    background-color: white;
+    align-items: center;
+    display: -webkit-flex;
+    padding-left: 5px;
+    padding-right: 5px;
   }
+
+  #home .toutiao img{
+    float: left;
+    height: 28px;
+    width: 25%;
+    display: inline-block;
+  }
+
+  #home .toutiao #toutiaoSlider{
+    width: 75%;
+    float: left;
+    margin-top: -2px;
+    margin-left: 10px;
+    align-items: center;
+    display: -webkit-flex;
+    height: 10%;
+  }
+
+  //秒杀
+  #home #content{
+    margin: 10px 5px;
+    background-color: #fff;
+    box-shadow: 0 1px 1px #dcdcdc;
+  }
+  #home .content-top{
+    height: 32px;
+    overflow: hidden;
+  }
+
+  #home .content-top{
+    display: block;
+    width: 16px;
+    height: 20px;
+    margin: 4px 4px 0 4px;
+    background-image:url('../assets/img/seckill-icon.png');
+    background-size: 16px 20px;
+    float: left;
+  }
+
+  #home .content-top h2{
+    float: left;
+    font-size: 15px;
+    color: #f00;
+    line-height: 30px;
+    margin-right: 10px;
+    margin-top: 0;
+  }
+
+  
+
+
 
 
 }
