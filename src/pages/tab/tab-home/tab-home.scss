@@ -314,9 +314,56 @@ page-tab-home {
 
   #home .floor-title{
     font-size: 15px;
-    padding-top: 8px;
-
+    padding:8px 0 7px 5px;
   }
+
+  #home .floor-title:before{
+    display: inline-block;
+    content: '';
+    width: 3px;
+    height: 12px;
+    background-color: #d8505c;
+    margin: 1px 7px 0 0 ;
+  }
+
+  #home .floor-product{
+    width: 100%;
+  }
+
+  #home .product-list{
+    width: 50%;
+    overflow: hidden;
+    float: left;
+  }
+
+  #home .product-list img{
+    width: 100%;
+    display: block;
+    border-top: 1px solid #eee;
+  }
+
+  #home .floor-left{
+    border-right: 1px solid #eee;
+    margin-left: -1px;
+  }
+
+  //置顶
+  #home .back_top{
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    bottom: 55px;
+    right: 10px;
+    background: url('../assets/img/scroll-to-top-icon.png') no-repeat;
+    background-size: 35px 35px;
+    opacity: 1;
+    transition: all .3s ease 0s;
+    -webkit-transition: all .3s ease 0s;
+    z-index: 100;
+  }
+
+
+
 
 
 }
