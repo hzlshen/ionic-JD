@@ -305,5 +305,18 @@ page-tab-home {
     width: 100%;
   }
 
+  #home .floor{
+    margin: 0 5px 5px;
+    background-color:#fff;
+    box-shadow:0 1px 1px #dcdcdc;
+    overflow:hidden;
+  }
+
+  #home .floor-title{
+    font-size: 15px;
+    padding-top: 8px;
+
+  }
+
 
 }
