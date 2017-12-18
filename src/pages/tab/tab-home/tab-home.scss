@@ -180,13 +180,112 @@ page-tab-home {
   #home .toutiao{
     margin-top: 10px;
     position: relative;
+<<<<<<< HEAD
     height:42px;
+=======
+    height: 42px;
+>>>>>>> 2da0543c529c11090face03b10123e31085fcf4e
     width: 100%;
     background-color: white;
     align-items: center;
     display: -webkit-flex;
     padding-left: 5px;
     padding-right: 5px;
+<<<<<<< HEAD
+=======
+  }
+
+  #home .toutiao img{
+    float: left;
+    height: 28px;
+    width: 25%;
+    display: inline-block;
+  }
+
+  #home .toutiao #toutiaoSlider{
+    width: 75%;
+    float: left;
+    margin-top: -2px;
+    margin-left: 10px;
+    align-items: center;
+    display: -webkit-flex;
+    height: 10%;
+  }
+
+  //秒杀
+  #home #content{
+    margin: 10px 5px;
+    background-color: #fff;
+    box-shadow: 0 1px 1px #dcdcdc;
+  }
+  #home .content-top{
+    height: 32px;
+    overflow: hidden;
+  }
+
+  #home .content-top{
+    display: block;
+    width: 16px;
+    height: 20px;
+    margin: 4px 4px 0 4px;
+    background-image:url('../assets/img/seckill-icon.png');
+    background-size: 16px 20px;
+    float: left;
+  }
+
+  #home .content-top h2{
+    float: left;
+    font-size: 15px;
+    color: #f00;
+    line-height: 30px;
+    margin-right: 10px;
+    margin-top: 0;
+  }
+
+  #home .content-time span{
+    background-image:none;
+    margin:5px 1px;
+    width:5px;
+    color:#5d5d5d;
+    font-size:14px;
+    font-weight:700;
+    text-align:center;
+
+  }
+
+  #home .content-time .time-text{
+    color: #ffffff;
+    font-size: 16px;
+    width: 15px;
+    font-weight: 300;
+    background-color: #5d5d5d;
+  }
+
+  #home .content-more{
+    float: right;
+    line-height: 30px;
+    margin-right: 5px;
+    font-size: 14px;
+  }
+
+  #home .content-btn{
+    padding-top: 7px;
+    overflow: hidden;
+  }
+
+  #home .content-btn li{
+    width: 33.3%;
+    float: left;
+  }
+
+  #home .content-btn li img{
+    display: block;
+    border-right: 1px solid #e6e6e6;
+    margin: 0;
+    padding: 0;
+    height:100px;
+    width: 100%;
+>>>>>>> 2da0543c529c11090face03b10123e31085fcf4e
   }
   #home .toutiao img{
     float: left;
@@ -194,6 +293,90 @@ page-tab-home {
     width: 25%;
     display: inline-block;
   }
+
+
+  #home .content-btn li  span{
+    display: block;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  #home .seckill-now{
+    color: #f15353;
+  }
+
+  #home .seckill-old{
+    text-decoration: line-through;
+  }
+
+  //广告
+  #home .ad ion-slide {
+
+  }
+
+  #home .ad ion-slide img {
+    height: 15%;
+    width: 100%;
+  }
+
+  #home .floor{
+    margin: 0 5px 5px;
+    background-color:#fff;
+    box-shadow:0 1px 1px #dcdcdc;
+    overflow:hidden;
+  }
+
+  #home .floor-title{
+    font-size: 15px;
+    padding:8px 0 7px 5px;
+  }
+
+  #home .floor-title:before{
+    display: inline-block;
+    content: '';
+    width: 3px;
+    height: 12px;
+    background-color: #d8505c;
+    margin: 1px 7px 0 0 ;
+  }
+
+  #home .floor-product{
+    width: 100%;
+  }
+
+  #home .product-list{
+    width: 50%;
+    overflow: hidden;
+    float: left;
+  }
+
+  #home .product-list img{
+    width: 100%;
+    display: block;
+    border-top: 1px solid #eee;
+  }
+
+  #home .floor-left{
+    border-right: 1px solid #eee;
+    margin-left: -1px;
+  }
+
+  //置顶
+  #home .back_top{
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    bottom: 55px;
+    right: 10px;
+    background: url('../assets/img/scroll-to-top-icon.png') no-repeat;
+    background-size: 35px 35px;
+    opacity: 1;
+    transition: all .3s ease 0s;
+    -webkit-transition: all .3s ease 0s;
+    z-index: 100;
+  }
+
+
 
 
 
