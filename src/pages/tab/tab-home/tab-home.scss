@@ -180,19 +180,13 @@ page-tab-home {
   #home .toutiao{
     margin-top: 10px;
     position: relative;
-<<<<<<< HEAD
     height:42px;
-=======
-    height: 42px;
->>>>>>> 2da0543c529c11090face03b10123e31085fcf4e
     width: 100%;
     background-color: white;
     align-items: center;
     display: -webkit-flex;
     padding-left: 5px;
     padding-right: 5px;
-<<<<<<< HEAD
-=======
   }
 
   #home .toutiao img{
@@ -285,7 +279,6 @@ page-tab-home {
     padding: 0;
     height:100px;
     width: 100%;
->>>>>>> 2da0543c529c11090face03b10123e31085fcf4e
   }
   #home .toutiao img{
     float: left;
@@ -376,8 +369,67 @@ page-tab-home {
     z-index: 100;
   }
 
+  .password-content{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #EEEEEE;
+    background-color: white;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: 1px solid #EEEEEE;
+  }
 
+  .content #password{
+    type: "password"
+  }
 
+  #btn_login {
+    width: 90%;
+    height: 45px;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 5px;
+    border: 1px solid #EEEEEE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    background-color: #EEEEEE;
+  }
 
+  #register{
+    width: 90%;
+    height: 45px;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 5px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    background-color: white;
+  }
+  .div_login_check{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    margin-top: 15px;
+  }
+  #checkbox_login{
+
+  }
+  .div_bttom_function{
+    width: 90%;
+    margin-top: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: space-between;
+  }
 
 }

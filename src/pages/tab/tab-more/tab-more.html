@@ -13,13 +13,50 @@
 
 
 <ion-content class="content">
-  <ion-input id="username" placeholder="用户名/邮箱/已验证手机" style="padding-left: 15px">
-    <div class="password-title">
+  <ion-input id="username" placeholder="用户名/邮箱/已验证手机" style="padding-left: 15px"></ion-input>
+    <div class="password-content">
       <ion-input id="password" placeholder="请输入密码" type="password" style="padding-left: 15px">
       </ion-input>
-      <ion-toggle [(ngModel)]="pepperoni">
-
+      <ion-toggle [(ngModel)]="pepperoni" style="margin-top: 2px;margin-right: 5px">
       </ion-toggle>
     </div>
-  </ion-input>
+    <div class="password-content">
+      <ion-input id="password" placeholder="请输入验证码" type="password" style="padding-left: 15px">
+      </ion-input>
+      <p>|</p>
+      <img src="assets/img/common/verify_code.jpg" alt="" width="20%" height="43px">
+    </div>
+
+    <div id="btn_login">
+      <div style="color: gray">登录</div>
+    </div>
+    <div id="register">
+      <div style="color: red;">注册</div>
+    </div>
+
+  <div class="div_login_check">
+    <ion-checkbox id="checkbox_login" [(ngModel)]="mushrooms" color="red"></ion-checkbox>
+    <div style=" margin-left:5px;color: black "> 一个月内免登陆</div>
+  </div>
+  <div class="div_bttom_function">
+    <div style="display: flex;align-items:center">
+      <img src="assets/img/common/return_password.png" width="24px" height="24px"/>
+      <p>找回密码</p>
+    </div>
+
+    <div style="display: flex; align-items:center">
+      <img src="assets/img/common/register.png" width="24px" height="24px"/>
+      <p>快速注册</p>
+    </div>
+  </div>
+  <div style="display: flex;align-items:center; margin-left: 5%;
+    margin-right: 5%; width: 90%" >
+    <p style="width:30%;height:1px;background-color: #5d5d5d;margin-right: 5% " ></p>
+    <p style="color: #5d5d5d " >其他登录方式</p>
+    <p style="width:30%;height:1px;background-color: #5d5d5d;margin-left: 5% " ></p>
+  </div>
+  <div style="display: flex;flex-direction: column;align-items: center">
+    <img src="assets/img/common/qq.png"  width="24px" height="24px"/>
+    <p>QQ</p>
+  </div>
 </ion-content>
