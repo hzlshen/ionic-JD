@@ -121,5 +121,53 @@ export class TabHomePage {
       loop:true
     });
   }
+  
+  //初始化头部滚动条
+  private initHeaderSlide(){
+    this.oSwiper1 = new Swiper('.swiper-container',{
+      slidesPerView:1,
+      paginationClickable:true,
+      centeredSlides:true,
+      autoplay:2000,
+      autoplayDisableOnInteraction:false,
+      loop:true,
+      //如果需要分页
+      pagination:'.swiper-pagination',
+      //改变自动更新
+      oberver:true,
+      observeParents:true
+    });
+  }
+  
+  private getHeaderSlideData(){
+    return [
+      {
+        alt: "双十一预热主场会",
+        src: "assets/img/home-headerSlide-1.jpg"
+      },{
+        alt: "家具盛典 好货提前抢",
+        src: "assets/img/home-headerSlide-1.jpg"
+      },{
+        alt: "IT抢券节",
+        src: "assets/img/home-headerSlide-1.jpg"
+      },{
+        alt: "11月11天家电低价不停歇",
+        src: "assets/img/home-headerSlide-1.jpg"
+      },{
+        alt: "潮流数码 双11爽购攻略",
+        src: "assets/img/home-headerSlide-1.jpg"
+      },
+    ];
+  }
+  
+  startPage(pageUrl){
+    if (pageUrl == 'search'){
+    
+    }else if(pageUrl == 'login'){
+    
+    }
+  }
+  
+  
 
 }
