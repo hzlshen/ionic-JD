@@ -55,7 +55,62 @@ page-tab-more {
     background-color: white;
   }
 
+  .password-content{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #eeeeee;
+    background-color: white;
+    width: 90%;
+    margin: 15px 5px 0 5px;
+    border-radius: 5px;
+  }
 
+  .content #password{
+    type:"password"
+  }
 
+  #btn_login{
+    width: 90%;
+    height:45px;
+    margin: 0 5px;
+    border-radius: 5px;
+    border: 1px solid #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    background-color: #EEEEEE;
+  }
+
+  #register{
+    width: 90%;
+    height:45px;
+    margin: 0 5px;
+    border-radius: 5px;
+    border: 1px solid red;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 25px;
+    background-color: white;
+  }
+
+  .div_login_check{
+    width: 90%;
+    margin: 0 5px;
+    display: flex;
+    margin-top: 15px;
+  }
+
+  #checkbox_login{
+
+  }
+
+  .div_bttom_function{
+    width: 90%;
+    margin: 10px 5px 0 5px;
+    display: flex;
+    justify-content: space-between;
+  }
 
 }

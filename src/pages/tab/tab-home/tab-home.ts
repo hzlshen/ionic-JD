@@ -25,12 +25,12 @@ export class TabHomePage {
   }
   
   ionViewDidLoad() {
-    // this.initHeaderSlide();
-    // this.headerSlideData = this.getHeaderSlideData();
-    // this.headerChangeColor();
-    // this.goTop();
-    // this.initToutiaoSlide();
-    // this.countdown();
+    this.initHeaderSlide();
+    this.headerSlideData = this.getHeaderSlideData();
+    this.headerChangeColor();
+    this.goTop();
+    this.initToutiaoSlide();
+    this.countdown();
   }
   
   private countdown(){
