@@ -1,18 +1,52 @@
-<!--
-  Generated template for the TabDiscoverPage page.
+<ion-content id="category" cache-view="flase">
+  <header id="header">
+    <div class="header-left">
+        <span></span>
+    </div>
 
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-<ion-header>
+    <!--搜索框-->
+    <a class="header-content" ng-href="#/search">
+      <span></span>
+    </a>
+    <div class="header-right">
+      <span></span>
+    </div>
+  </header>
 
-  <ion-navbar>
-    <ion-title>tab-discover</ion-title>
-  </ion-navbar>
-
-</ion-header>
-
-
-<ion-content padding>
-
+  <nav class="nav">
+    <ul>
+      <li *ngFor="let item of categoryData,let i = index" (click)="categoryLeftClick(i);getCategoryDetailData(item.typeNumber);">
+        <span [ngClass]="{true:'nav-current',false:'nav-blur'}[item.isSelect]" style="font-size: 11px">{{item.name}}</span>
+      </li>
+    </ul>
+  </nav>
+  <div id="pro">
+    <div class="pro-scroll">
+      <div class="pro-warp">
+        <div class="banner">
+          <img src="assets/img/banner_1.jpg" alt=""/>
+        </div>
+        <div class="content">
+          <div class="content-title">
+            <span>热卖品类</span>
+          </div>
+          <div class="content-body">
+            <li class="content-body-list" *ngFor="let item of categoryDetailData, let i = index" (click)="startPage(i);" >
+              <img src="{{item.src}}" alt="">
+              <span>{{item.name}}</span>
+            </li>
+          </div>
+          <div class="content-title">
+            <span>冬季新品</span>
+          </div>
+          <div class="content-body">
+            <li class="content-body-list" *ngFor="let item of obj_GoodsListData, let i = index">
+              <img src="{{item.src}}" />
+              <span>{{item.name}}</span>
+            </li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </ion-content>
