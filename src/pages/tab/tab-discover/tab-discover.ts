@@ -214,6 +214,11 @@ export class TabDiscoverPage {
     this.categoryData[this.select].isSelect = false;
     let data = this.categoryData[index];
     data.isSelect = true;
+    this.select = index;
+  };
+  
+  startPage(){
+    // this.navCtrl.push(GoodListPage)
   }
 
 }
