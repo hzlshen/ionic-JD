@@ -1,11 +1,12 @@
-import {Component, ElementRef, ViewChild } from '@angular/core';
-import { NavController, NavParams} from 'ionic-angular';
+import {Component, ElementRef, ViewChild} from '@angular/core';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
 // import * as Swiper from 'swiper';
 declare var Swiper;
 
+@IonicPage()
 @Component({
-  selector: 'page-tab-home-page',
-  templateUrl: 'tab-home-page.html',
+  selector: 'page-tab-home',
+  templateUrl: 'tab-home.html',
 })
 export class TabHomePage {
   @ViewChild('lyScroll')
@@ -171,10 +172,7 @@ export class TabHomePage {
     }
     
   }
-  // categoryLeftClick=function(e){
-  //   e.target.className='nav-current';
-  //   $(e.target).siblings().removeClass().addClass('nav-blur');
-  // };
+
   
   
 }
