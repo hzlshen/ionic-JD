@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {GoodListPage} from "../good-list/good-list";
 
 @IonicPage()
 @Component({
@@ -217,8 +218,13 @@ export class TabDiscoverPage {
     this.select = index;
   };
   
-  startPage(){
-    // this.navCtrl.push(GoodListPage)
+  startPage(index:number){
+    this.navCtrl.push(GoodListPage,{
+      item:index
+    });
+  }
+  goBack(){
+    console.log('goBack');
   }
 
 }
