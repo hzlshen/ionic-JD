@@ -1,12 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-/**
- * Generated class for the GoodListPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -14,10 +8,14 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'good-list.html',
 })
 export class GoodListPage {
-
+  
+  index;
+  obj_goodsListData=[];
+  
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-
+  
+  
   ionViewDidLoad() {
     console.log('ionViewDidLoad GoodListPage');
   }
