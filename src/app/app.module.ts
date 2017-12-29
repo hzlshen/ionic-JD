@@ -12,6 +12,7 @@ import {TabMessagesPage} from "../pages/tab/tab-messages/tab-messages";
 import {TabDiscoverPage} from "../pages/tab/tab-discover/tab-discover";
 import {TabMorePage} from "../pages/tab/tab-more/tab-more";
 import {TabBroadcastPage} from "../pages/tab/tab-broadcast/tab-broadcast";
+import { GoodsServiceProvider } from '../providers/goods-service/goods-service';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import {TabBroadcastPage} from "../pages/tab/tab-broadcast/tab-broadcast";
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    GoodsServiceProvider
   ]
 })
 export class AppModule {}
