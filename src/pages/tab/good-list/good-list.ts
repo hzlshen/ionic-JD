@@ -30,5 +30,40 @@ export class GoodListPage {
 
   }
 
-  
+  private loadNetData(refresher: any) {
+    this.goodsService.getGoodLists().subscribe(
+      countries => this.obj_goodsListData = <any>countries,
+      error => this.errorMessage = <any>error,
+      function complete() {
+        refresher.complete();
+      },
+    );
+  }
+
+  private loadData(){
+    this.goodsService.getGoodLists().subscribe(
+      countries=>this.obj_goodsListData=<any>countries,
+      error=>this.errorMessage=<any>error,
+    );
+  }
+
+  doInfinite(infiniteScroll){
+    console.log("新年好！");
+    setTimeout(()=>{
+      infiniteScroll.complete();
+    },500);
+  }
+
+  doRefresh(refresher){
+    this.loadNetData(refresher);
+  }
+
+  goBack() {
+    this.navCtrl.pop();
+  }
+  startPage(index: number) {
+    this.navCtrl.push(GoodDetailPage, {
+      item: index
+    });
+  }
 }
