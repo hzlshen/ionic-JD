@@ -1,18 +1,39 @@
-<!--
-  Generated template for the GoodDetailPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-<ion-header>
-
-  <ion-navbar>
-    <ion-title>goodDetail</ion-title>
-  </ion-navbar>
-
-</ion-header>
 
 
-<ion-content padding>
+<ion-content  id="details" cache-view="false">
+  <ion-content>
+    <!--header-->
+    <header id="header">
+      <div class="header-left">
+        <div (click)="goBack()">
+          <span></span>
+        </div>
+      </div>
+      <div class="header-center">
+        <span>商品详情</span>
+      </div>
+      <div class="header-right">
+        <span></span>
+      </div>
+    </header>
 
+    <!--产品展示图-->
+    <div class="view">
+      <div class="viewWrap">
+        <ul>
+          <li>
+            <img src="assets/img/details/detail01.jpg"  alt="">
+          </li>
+        </ul>
+        <div class="viewText"><span>1</span></div>
+      </div>
+    </div>
+
+    <!--产品选项-->
+    <div id="des">
+      <div></div>
+    </div>
+
+
+  </ion-content>
 </ion-content>
