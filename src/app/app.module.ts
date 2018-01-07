@@ -13,6 +13,7 @@ import {TabDiscoverPage} from "../pages/tab/tab-discover/tab-discover";
 import {TabMorePage} from "../pages/tab/tab-more/tab-more";
 import {TabBroadcastPage} from "../pages/tab/tab-broadcast/tab-broadcast";
 import { GoodsServiceProvider } from '../providers/goods-service/goods-service';
+import { LookServiceProvider } from '../providers/look-service/look-service';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { GoodsServiceProvider } from '../providers/goods-service/goods-service';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    GoodsServiceProvider
+    GoodsServiceProvider,
+    LookServiceProvider
   ]
 })
 export class AppModule {}

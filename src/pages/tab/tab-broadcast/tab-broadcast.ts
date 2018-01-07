@@ -1,7 +1,8 @@
 import {Component, ViewChild} from '@angular/core';
 import { NavController, NavParams, Slides} from 'ionic-angular';
-import {LookService} from "../../../providers/look-service";
 import {GOODLIST_head_URL} from "../../../providers/Constants";
+import { LookServiceProvider } from '../providers/look-service/look-service';
+
 @Component({
   selector: 'page-tab-broadcast-page',
   templateUrl: 'tab-look-page.html',
@@ -16,7 +17,7 @@ export class TabBroadcastPage {
   errorMessage: string;
   Image_head_Url: string;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public lookservice: LookService) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public lookservice: LookServiceProvider) {
     this.Image_head_Url=GOODLIST_head_URL;
   }
 
