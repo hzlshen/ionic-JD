@@ -1,11 +1,11 @@
 import {Component, ViewChild} from '@angular/core';
 import { NavController, NavParams, Slides} from 'ionic-angular';
 import {GOODLIST_head_URL} from "../../../providers/Constants";
-import { LookServiceProvider } from '../providers/look-service/look-service';
+import { LookServiceProvider } from "../../../providers/look-service/look-service";
 
 @Component({
   selector: 'page-tab-broadcast-page',
-  templateUrl: 'tab-look-page.html',
+  templateUrl: 'tab-broadcast-page.html',
 })
 export class TabBroadcastPage {
   @ViewChild('mySlider') slider: Slides;
@@ -17,7 +17,7 @@ export class TabBroadcastPage {
   errorMessage: string;
   Image_head_Url: string;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public lookservice: LookServiceProvider) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public lookservice:LookServiceProvider) {
     this.Image_head_Url=GOODLIST_head_URL;
   }
 
