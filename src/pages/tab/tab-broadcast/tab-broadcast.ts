@@ -1,11 +1,11 @@
 import {Component, ViewChild} from '@angular/core';
 import { NavController, NavParams, Slides} from 'ionic-angular';
-import {GOODLIST_head_URL} from "../../../providers/Constants";
 import { LookServiceProvider } from "../../../providers/look-service/look-service";
+import {GOODLIST_head_URL} from "../../../providers/Constants";
 
 @Component({
   selector: 'page-tab-broadcast-page',
-  templateUrl: 'tab-broadcast-page.html',
+  templateUrl: 'tab-broadcast.html',
 })
 export class TabBroadcastPage {
   @ViewChild('mySlider') slider: Slides;
