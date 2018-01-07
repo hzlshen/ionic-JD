@@ -14,6 +14,7 @@ import {TabMorePage} from "../pages/tab/tab-more/tab-more";
 import {TabBroadcastPage} from "../pages/tab/tab-broadcast/tab-broadcast";
 import { GoodsServiceProvider } from '../providers/goods-service/goods-service';
 import { LookServiceProvider } from '../providers/look-service/look-service';
+import { ConstantsProvider } from '../providers/constants/constants';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { LookServiceProvider } from '../providers/look-service/look-service';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     GoodsServiceProvider,
-    LookServiceProvider
+    LookServiceProvider,
+    ConstantsProvider,
   ]
 })
 export class AppModule {}
