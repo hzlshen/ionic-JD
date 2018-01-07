@@ -1,17 +1,2 @@
-import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
-
-/*
-  Generated class for the ConstantsProvider provider.
-
-  See https://angular.io/guide/dependency-injection for more info on providers
-  and Angular DI.
-*/
-@Injectable()
-export class ConstantsProvider {
-
-  constructor(public http: HttpClient) {
-    console.log('Hello ConstantsProvider Provider');
-  }
-
-}
+export const GOODLIST_URL = 'http://rapapi.org/mockjsdata/18396/api/discove/goodlist';
+export const GOODLIST_head_URL = 'http://img.lapin365.com/productpictures';
