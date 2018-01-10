@@ -2,7 +2,7 @@ import {Component, ElementRef, ViewChild} from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 // import * as Swiper from 'swiper';
 // import * as Swiper from 'swiper';
-declare var Swiper;
+// declare var Swiper;
 
 @IonicPage()
 @Component({
@@ -17,18 +17,18 @@ export class TabHomePage {
   @ViewChild('btnBackTop')
   bBackTop: ElementRef;
   
-  oSwiper1: any = null;
+  // oSwiper1: any = null;
   public headerSlideData = [];
   
   constructor(public navCtrl: NavController, public navParams: NavParams, public el: ElementRef) {
   }
   
   ionViewDidLoad() {
-    this.initHeaderSlide();
+    // this.initHeaderSlide();
     this.headerSlideData = this.getHeaderSlideData();
     this.headerChangeColor();
     this.goTop();
-    this.initToutiaoSlide();
+    // this.initToutiaoSlide();
     this.countdown();
   }
   
@@ -115,30 +115,30 @@ export class TabHomePage {
   }
   
   // 初始化京东头条滚动条
-  private initToutiaoSlide() {
-    new Swiper('#toutiaoSlider', {
-      direction:'vertical',
-      autoplay: 2000,
-      loop: true
-    });
-  }
+  // private initToutiaoSlide() {
+  //   new Swiper('#toutiaoSlider', {
+  //     direction:'vertical',
+  //     autoplay: 2000,
+  //     loop: true
+  //   });
+  // }
   // 初始化头部滚动条
-  private initHeaderSlide() {
-    this.oSwiper1 = new Swiper('.swiper-container', {
-      slidesPerView: 1,
-      paginationClickable: true,
-      centeredSlides: true,
-      autoplay: 2000,
-      autoplayDisableOnInteraction: false,
-      loop: true,
-      // 如果需要分页器
-      pagination: '.swiper-pagination',
-      // 改变自动更新
-      observer:true,
-      observeParents:true
-    });
-    
-  }
+  // private initHeaderSlide() {
+  //   this.oSwiper1 = new Swiper('.swiper-container', {
+  //     slidesPerView: 1,
+  //     paginationClickable: true,
+  //     centeredSlides: true,
+  //     autoplay: 2000,
+  //     autoplayDisableOnInteraction: false,
+  //     loop: true,
+  //     // 如果需要分页器
+  //     pagination: '.swiper-pagination',
+  //     // 改变自动更新
+  //     observer:true,
+  //     observeParents:true
+  //   });
+  //
+  // }
   
   private getHeaderSlideData() {
     return [
