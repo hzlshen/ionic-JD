@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {Http,Response } from '@angular/http';
 import 'rxjs/add/operator/map';
-import {GOODLIST_URL} from "./Constants";
+import {GOODLIST_URL} from "../Constants";
 import {Observable} from 'rxjs/Observable'
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/map';;

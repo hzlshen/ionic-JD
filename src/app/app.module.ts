@@ -14,6 +14,8 @@ import {TabMorePage} from "../pages/tab/tab-more/tab-more";
 import {TabBroadcastPage} from "../pages/tab/tab-broadcast/tab-broadcast";
 import { GoodsServiceProvider } from '../providers/goods-service/goods-service';
 import { LookServiceProvider } from '../providers/look-service/look-service';
+import {HttpModule} from "@angular/http";
+// import {LazyLoadImageModule} from "ng-lazyload-image";
 
 @NgModule({
   declarations: [
@@ -26,6 +28,8 @@ import { LookServiceProvider } from '../providers/look-service/look-service';
     TabBroadcastPage,
   ],
   imports: [
+    // LazyLoadImageModule,
+    HttpModule,
     BrowserModule,
     IonicModule.forRoot(MyApp)
   ],
