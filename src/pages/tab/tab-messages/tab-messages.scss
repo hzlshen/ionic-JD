@@ -1,3 +1,15 @@
 page-tab-messages {
-
+  .toolbar-background-ios{
+    background-color: #333;
+    background-image: url('../assets/img/headerbg.png');
+    height: 44px;
+  }
+  #left_img{
+    display: block;
+    text-decoration: none;
+    width: 20px;
+    height: 20px;
+    background-size: 200px 200px;
+    
+  }
 }
