@@ -44,5 +44,21 @@ page-tab-messages {
   .card_today_get{
     margin-top: 10px;
   }
+  .card_hot_sail{
+    margin-top: 10px;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-ios{
+    width:100%;
+    margin: 0px;
+  }
+  .card-content-ios{
+    padding: 0px;
+  }
+  #reconmend_list .card-ios{
 
+  }
 }
