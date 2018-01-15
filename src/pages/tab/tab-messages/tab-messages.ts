@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {GOODLIST_head_URL} from "../../../providers/Constants";
 
 /**
  * Generated class for the TabMessagesPage page.
@@ -15,11 +16,22 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class TabMessagesPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  obj_ShopCartRecommendData = [];
+  private errorMessage: String;
+  Image_head_Url: string;
+
+  constructor(public navCtrl: NavController, public navParams: NavParams,public lookservice: LookService) {
+    this.Image_head_Url=GOODLIST_head_URL;
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad TabMessagesPage');
-  }
+    this.lookservice.getGoodsList().subscribe(
+      countries => this.obj_ShopCartRecommendData = <any>countries,
+      error => this.errorMessage = <any>error,
+      function complete() {
 
+      },
+    );
+  }
 }
