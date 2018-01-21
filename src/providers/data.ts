@@ -11,6 +11,6 @@ export class Data {
     let newData = JSON.stringify(data);
     this.storage.set('todos', newData);
 
-    console.log(111111111111);
+    
   }
 }
