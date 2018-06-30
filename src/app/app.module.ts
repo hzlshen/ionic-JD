@@ -1,3 +1,4 @@
+import { LoginPage } from './../pages/login/login';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
@@ -16,6 +17,7 @@ import { GoodsServiceProvider } from '../providers/goods-service/goods-service';
 import { LookServiceProvider } from '../providers/look-service/look-service';
 import {HttpModule} from "@angular/http";
 // import {LazyLoadImageModule} from "ng-lazyload-image";
+import { RegisterPage } from '../pages/register/register';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,8 @@ import {HttpModule} from "@angular/http";
     TabDiscoverPage,
     TabMorePage,
     TabBroadcastPage,
+    LoginPage,
+    RegisterPage
   ],
   imports: [
     // LazyLoadImageModule,
@@ -42,6 +46,8 @@ import {HttpModule} from "@angular/http";
     TabDiscoverPage,
     TabMorePage,
     TabBroadcastPage,
+    LoginPage,
+    RegisterPage
   ],
   providers: [
     StatusBar,

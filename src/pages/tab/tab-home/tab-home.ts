@@ -1,3 +1,4 @@
+import { LoginPage } from './../../login/login';
 import {Component, ElementRef, ViewChild} from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 // import * as Swiper from 'swiper';
@@ -16,13 +17,13 @@ export class TabHomePage {
   greetBgDiv: ElementRef;
   @ViewChild('btnBackTop')
   bBackTop: ElementRef;
-  
+
   // oSwiper1: any = null;
   public headerSlideData = [];
-  
+
   constructor(public navCtrl: NavController, public navParams: NavParams, public el: ElementRef) {
   }
-  
+
   ionViewDidLoad() {
     // this.initHeaderSlide();
     this.headerSlideData = this.getHeaderSlideData();
@@ -31,8 +32,8 @@ export class TabHomePage {
     // this.initToutiaoSlide();
     this.countdown();
   }
-  
-  
+
+
   private countdown() {
     let timer;
     if(timer)
@@ -76,14 +77,14 @@ export class TabHomePage {
         timeList[i].innerHTML=timeStr[i];
       }
     },1000)
-    
+
   }
-  
-  
+
+
   private goTop() {
     let lyBg=this.lyScrollDiv.nativeElement;
     let btTop=this.bBackTop.nativeElement;
-    
+
     lyBg.addEventListener('scroll',function(){
       var top = btTop.scrollTop;
       if(top>500){
@@ -94,12 +95,12 @@ export class TabHomePage {
         btTop.style.opacity = 0;
       }
     },false);
-    
+
     btTop.onclick = function(){
       lyBg.scrollTop = 0;
     }
   }
-  
+
   private headerChangeColor() {
     //https://segmentfault.com/a/1190000008653690
     let headdiv = this.lyScrollDiv.nativeElement;
@@ -110,10 +111,10 @@ export class TabHomePage {
         nowOpacity = this.scrollTop / 250;
       }
       lHeadBgdiv.style.opacity = nowOpacity;
-      
+
     }
   }
-  
+
   // 初始化京东头条滚动条
   // private initToutiaoSlide() {
   //   new Swiper('#toutiaoSlider', {
@@ -139,7 +140,7 @@ export class TabHomePage {
   //   });
   //
   // }
-  
+
   private getHeaderSlideData() {
     return [
       {
@@ -164,16 +165,17 @@ export class TabHomePage {
       }
     ];
   }
-  
+
   startPage(pageUrl) {
     if (pageUrl == "search") {
-    
+
     } else if (pageUrl == "login") {
-    
+      //登录
+      this.navCtrl.push(LoginPage)
     }
-    
+
   }
 
-  
-  
+
+
 }
