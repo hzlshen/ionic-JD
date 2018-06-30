@@ -1,3 +1,4 @@
+// import { LookServiceProvider } from './../../../providers/look-service/look-service';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {GOODLIST_head_URL} from "../../../providers/Constants";
@@ -20,18 +21,18 @@ export class TabMessagesPage {
   private errorMessage: String;
   Image_head_Url: string;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams,public lookservice: LookService) {
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.Image_head_Url=GOODLIST_head_URL;
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad TabMessagesPage');
-    this.lookservice.getGoodsList().subscribe(
-      countries => this.obj_ShopCartRecommendData = <any>countries,
-      error => this.errorMessage = <any>error,
-      function complete() {
+    // this.lookservice.getGoodsList().subscribe(
+    //   countries => this.obj_ShopCartRecommendData = <any>countries,
+    //   error => this.errorMessage = <any>error,
+    //   function complete() {
 
-      },
-    );
+    //   },
+    // );
   }
 }
